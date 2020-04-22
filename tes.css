@@ -1,0 +1,65 @@
+.clearHeader{
+    height: 200px; 
+    background-color: rgba(107,107,107,0.66);
+    position: fixed;
+    top:200;
+    width: 100%;
+    transition:ease all 1s;
+    -webkit-transition:ease all 1s;
+    -moz-transition:ease all 1s;
+    -o-transition:ease all 1s;
+    }
+    
+.darkHeader {
+    background-color:#333;
+    height: 100px;
+  }
+    
+.wrapper {
+    height:2000px;
+  }
+
+
+
+
+
+/*
+#keatas {
+  position: fixed;
+  bottom: 30px;
+  margin-left: -150px;
+  }
+  #keatas a {
+  width: 108px;
+  display: block;
+  text-align: center;
+  font: 11px/100% Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #bbb;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  transition: 1s;
+  }
+  #keatas a:hover {
+  color: #000;
+  }
+  /* icon panah
+  #keatas span {
+  width: 108px;
+  height: 108px;
+  display: block;
+  margin-bottom: 7px;
+  background: #ddd url(img/me.jpg) no-repeat center center;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  transition: 1s;
+  }
+  #keatas a:hover span {
+  background-color: #777;
+  }
+
+  */

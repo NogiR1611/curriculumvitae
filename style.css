@@ -1,0 +1,520 @@
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family: 'Dosis', sans-serif;
+    transition:all .3s;
+    animation-name:body;
+    animation-timing-function:linear;
+    animation-duration:3s;
+}
+@keyframes body{
+    0% {top:400px; opacity:0;}
+    25% {top:300px; opacity:0.25;}
+    50% {top:200px; opacity:0.5;}
+    75% {top:100px; opacity:0.75;}
+    100% {top:0px; opacity:1;}
+}
+.navbar{
+    background-color:#2F4F4F;
+    height:100px;
+    width:100%;
+    position:fixed;
+    z-index:1;
+    color:white;
+    transition:ease all .3s;
+}
+.modif-nav{
+    height:70px;
+    background-color:#2F4F4F;
+    animation-name:navbar;
+    animation-timing-function:linear;
+    animation-duration:3s;
+}
+@keyframes navbar{
+    0% {opacity:0;}
+    25% {opacity:0.25;}
+    50% {opacity:0.5;}
+    75% {opacity:0.75;}
+    100% {opacity:1;}
+}
+.list-nav ul{
+    list-style:none;
+    margin:0px 100px;
+    padding:0px;
+    overflow:hidden;
+}
+.list-nav ul li{
+    float:left;
+}
+
+.list-nav a{
+    text-decoration:none;
+    display:block;
+    padding:15px 20px;
+    color:white;
+    transition:all .3s;
+}
+.list-nav a:hover{
+    color:gray;
+    background-color:#5F9EA0;
+}
+.list-nav a:active{
+    color:white;
+}
+#Aboutme{
+    padding-top:100px;
+}
+.aboutme .profile{
+    padding:20px 30px;
+    font-size:20px;
+    background-color:white;
+    position:static;
+    display:grid;
+    grid-template-columns:repeat(2,auto);
+}
+.profile .profileimg{
+    padding:20px 40px;
+    text-align:center;
+}
+#border-image-horizon{
+    border:1px solid black;
+    width:350px;
+    margin-left:100px;
+}
+.Arrow{
+    width:40px;
+    height:40px;
+    margin:10px;
+}
+.profesi{
+    font-size:24px;
+    text-align:left;
+    margin-left:100px;
+}
+.profile .profileimg .me{
+    width:300px;
+    height:300px;
+    border-radius:50%;
+}
+.profile .deskripsi{
+    text-align:left;
+    padding:20px 100px;
+    display:grid;
+    grid-template-rows:repeat(4,auto);
+}
+#border-line{
+    border:1px solid gray;
+    margin:70px;
+}
+.hobby{
+    display:grid;
+    grid-template-columns:repeat(3,auto);
+    padding:20px 30px;
+}
+.iconhobby{
+    width:150px;
+    height:150px;
+}
+.bag2{
+    background-color:#f9f9ff;
+    width:100%;
+    height:400px;
+    padding:50px 50px;
+}
+.pendidikan{
+    margin:30px;
+    margin-left:250px;
+}
+.education{
+    padding-top:70px;
+    position:relative;
+    transition:all .2s;
+}
+.title{
+    width:150px;
+    text-align:center;
+}
+.titleskills{
+    text-align:left;
+}
+.pendidikan{
+    display:grid;
+    list-style-type:none;
+    grid-template-columns:repeat(4,auto);
+}
+ul{
+    list-style-type: none;
+}
+.bag3{
+    background-color:white;
+    display:grid;
+    grid-template-columns:repeat(2,auto);
+    padding:70px 50px;
+    width:100%;
+}
+.coding-skills{
+    position:relative;
+    transition:all .2s;
+}
+.skillbar{
+    float:left;
+    width:400px;
+    height:20px;
+    background-color:#f1e2e2;
+    border-radius:20px;
+    margin-right:10px;
+}
+.skillbar_bar{
+    height:20px;
+    width:0%;
+    border-radius:20px;
+}
+#skillbar_html{
+    background-color:#48D1CC;
+}
+#skillbar_javascript{
+    background-color:#1E90FF;
+}
+#skillbar_css{
+    background-color:#7CFC00;
+}
+#skillbar_jquery{
+    background-color:#4682B4;
+}
+#skillbar_nodejs{
+    background-color:#ADFF2F;
+}
+#skillbar_laravel{
+    background-color:#800000;
+}
+#skillbar_mysql{
+    background-color:#fd7e14;
+}
+#skillbar_blog{
+    background-color:#FF6347;
+}
+#skillbar_draw{
+    background-color:#00FF7F;
+}
+#skillbar_write{
+    background-color:#dc3545;
+}
+#skillbar_frontend{
+    background-color:#6610f2;
+}
+#skillbar_backend{
+    background-color:#ffc107;
+}
+.bag4{
+    width:100%;
+    height:400px;
+    background-color:#f9f9ff;
+    padding:30px 40px;
+}
+.findme{
+    text-align:left;
+}
+.location{
+    height:30px;
+    width:30px;
+    margin:10px;
+}
+.alamat{
+    padding:0px 50px;
+    margin-top:-40px;
+}
+.contact{
+    display:grid;
+    grid-template-columns:repeat(3,auto);
+}
+
+.sosmed{
+    display:grid;
+    grid-template-rows:repeat(3,auto);
+}
+.imagesosmed{
+    width:30px;
+    height:30px;
+    margin:10px;
+}
+.kontak{
+    display:grid;
+    grid-template-rows:repeat(3,auto);
+}
+.sosmed a:link{
+    text-decoration:none;
+    color:black;
+    transition:all .4s;
+}
+.sosmed a:visited{
+    color:black;
+}
+.sosmed a:hover{
+    color:	#DAA520;
+}
+.sosmed a:active{
+    color:black;
+}
+.kontak a:link{
+    text-decoration:none;
+    color:black;
+    transition:all .4s;
+}
+.kontak a:visited{
+    color:black;
+}
+.kontak a:hover{
+    color:	#DAA520;
+}
+.kontak a:active{
+    color:black;
+}
+.place{
+    display:grid;
+    grid-template-rows:repeat(2,auto);
+}
+
+@media screen and (max-width:320px){
+    
+    html{
+        scroll-behavior:smooth;
+        width:320px;
+    }
+    body{
+        font-family: 'Dosis', sans-serif;
+        transition:all .3s;
+        animation-name:body;
+        animation-timing-function:linear;
+        animation-duration:3s;
+    }
+    @keyframes body{
+        0% {top:400px; opacity:0;}
+        25% {top:300px; opacity:0.25;}
+        50% {top:200px; opacity:0.5;}
+        75% {top:100px; opacity:0.75;}
+        100% {top:0px; opacity:1;}
+    }
+    .navbar{
+        background-color:#2F4F4F;
+        height:auto;
+        width:100%;
+        color:white;
+        transition:ease all .3s;
+    }
+    .list-nav ul{
+        list-style:none;
+        margin:0px 100px;
+        padding:0px;
+        overflow:hidden;
+    }
+    .list-nav ul li{
+        float:left;
+    }
+    
+    .list-nav a{
+        text-decoration:none;
+        display:block;
+        padding:15px 20px;
+        color:white;
+        transition:all .3s;
+    }
+    
+    .list-nav a:hover{
+        color:gray;
+        background-color:#5F9EA0;
+    }
+    .list-nav a:active{
+        color:white;
+    }
+    .aboutme .profile{
+        padding:20px 30px;
+        font-size:20px;
+        background-color:white;
+        display:grid;
+        top: 200px;
+        grid-template-columns:repeat(2,auto);
+    }
+    .profile .profileimg{
+        padding:20px 40px;
+    }
+    .profile .profileimg img{
+        width:250px;
+        height:250px;
+        border-radius:50%;
+    }
+    .profile .deskripsi{
+        text-align:left;
+        padding:20px 30px;
+        grid:display;
+        grid-template-columns:repeat(4,auto);
+    }
+    #border-line{
+        border:1px solid gray;
+        margin:70px;
+    }
+    .hobby{
+        display:grid;
+        grid-template-columns:repeat(3,auto);
+        padding:20px 30px;
+    }
+    .iconhobby{
+        width:150px;
+        height:150px;
+    }
+    .bag2{
+        background-color:#DCDCDC;
+        width:100%;
+        height:400px;
+        padding:50px 50px;
+    }
+    .pendidikan{
+        margin:30px;
+        margin-left:250px;
+    }
+    .education{
+        position:relative;
+        transition:all .2s;
+    }
+    .title{
+        width:150px;
+        text-align:center;
+    }
+    .titleskills{
+        text-align:left;
+    }
+    .pendidikan{
+        display:grid;
+        list-style-type:none;
+        grid-template-columns:repeat(4,auto);
+    }
+    
+    ul{
+        list-style-type: none;
+    }
+    
+    .bag3{
+        background-color:gray;
+        display:grid;
+        grid-template-columns:repeat(2,auto);
+        width:100%;
+        padding:50px 30px;
+    }
+    
+    .coding-skills{
+        position:relative;
+        padding:0px 20px;
+        transition:all .2s;
+    }
+    .skillbar{
+        float:left;
+        width:400px;
+        height:20px;
+        background-color:#f1e2e2;
+        border-radius:20px;
+        margin-right:10px;
+    }
+    .skillbar_bar{
+        height:20px;
+        width:0%;
+        border-radius:20px;
+    }
+    #skillbar_html{
+        background-color:#48D1CC;
+    }
+    #skillbar_javascript{
+        background-color:#1E90FF;
+    }
+    #skillbar_css{
+        background-color:#7CFC00;
+    }
+    #skillbar_jquery{
+        background-color:#4682B4;
+    }
+    #skillbar_nodejs{
+        background-color:#ADFF2F;
+    }
+    #skillbar_laravel{
+        background-color:#800000;
+    }
+    #skillbar_blog{
+        background-color:#FF6347;
+    }
+    #skillbar_draw{
+        background-color:#00FF7F;
+    }
+    #skillbar_write{
+        background-color:#dc3545;
+    }
+    .bag4{
+        width:100%;
+        height:400px;
+        background-color:#F5F5DC;
+        padding:30px 40px;
+    }
+    .findme{
+        text-align:left;
+    }
+    .location{
+        height:30px;
+        width:30px;
+        filter:gray;
+        transition:all .8s;
+        -webkit-filter:grayscale(1);
+        -webkit-transition:all .8s ease-in-out;
+    }
+    .location a:hover{
+        filter:none;
+        -webkit-filter:grayscale(0);
+    }
+    .contact{
+        display:grid;
+        grid-template-columns:repeat(3,auto);
+    }
+    .sosmed{
+        display:grid;
+        grid-template-rows:repeat(3,auto);
+    }
+    .imagesosmed{
+        width:30px;
+        height:30px;
+        margin:10px;
+    }
+    .kontak{
+        display:grid;
+        grid-template-rows:repeat(3,auto);
+    }
+    .sosmed a:link{
+        text-decoration:none;
+        color:black;
+        transition:all .4s;
+    }
+    .sosmed a:visited{
+        color:black;
+    }
+    .sosmed a:hover{
+        color:	#DAA520;
+    }
+    .sosmed a:active{
+        color:black;
+    }
+    .kontak a:link{
+        text-decoration:none;
+        color:black;
+        transition:all .4s;
+    }
+    .kontak a:visited{
+        color:black;
+    }
+    .kontak a:hover{
+        color:	#DAA520;
+    }
+    .kontak a:active{
+        color:black;
+    }
+    .place{
+        display:grid;
+        grid-template-rows:repeat(2,auto);
+    }
+
+}
