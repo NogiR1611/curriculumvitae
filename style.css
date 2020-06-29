@@ -17,6 +17,7 @@ body{
 }
 .navbar{
     background-color:#2F4F4F;
+    padding:20px 20px;
     height:100px;
     width:100%;
     position:fixed;
@@ -24,8 +25,14 @@ body{
     color:white;
     transition:ease all .3s;
 }
+.menu{
+    width:75px;
+    height:75px;
+    display:none;
+}
 .modif-nav{
     height:70px;
+    padding:20px 20px;
     background-color:#2F4F4F;
     animation-name:navbar;
     animation-timing-function:linear;
@@ -48,10 +55,10 @@ body{
     float:left;
 }
 
-.list-nav a{
+.list-nav li a{
     text-decoration:none;
     display:block;
-    padding:15px 20px;
+    padding:10px 20px;
     color:white;
     transition:all .3s;
 }
@@ -75,12 +82,12 @@ body{
 }
 .profile .profileimg{
     padding:20px 40px;
-    text-align:center;
+    justify-self:center;
 }
 #border-image-horizon{
     border:1px solid black;
     width:350px;
-    margin-left:100px;
+    text-align:center;
 }
 .Arrow{
     width:40px;
@@ -93,8 +100,8 @@ body{
     margin-left:100px;
 }
 .profile .profileimg .me{
-    width:300px;
-    height:300px;
+    width:350px;
+    height:350px;
     border-radius:50%;
 }
 .profile .deskripsi{
@@ -106,6 +113,11 @@ body{
 #border-line{
     border:1px solid gray;
     margin:70px;
+}
+.profession2{
+    display:grid;
+    grid-template-columns:repeat(2,auto);
+    padding:20px 30px;
 }
 .hobby{
     display:grid;
@@ -127,7 +139,7 @@ body{
     margin-left:250px;
 }
 .education{
-    padding-top:70px;
+    padding-top:0px;
     position:relative;
     transition:all .2s;
 }
@@ -214,6 +226,13 @@ ul{
 }
 .findme{
     text-align:left;
+    padding:20px 30px;
+}
+.followme{
+    padding:20px 30px;
+}
+.contactme{
+    padding:20px 30px;
 }
 .location{
     height:30px;
@@ -228,7 +247,6 @@ ul{
     display:grid;
     grid-template-columns:repeat(3,auto);
 }
-
 .sosmed{
     display:grid;
     grid-template-rows:repeat(3,auto);
@@ -275,11 +293,10 @@ ul{
     grid-template-rows:repeat(2,auto);
 }
 
-@media screen and (max-width:320px){
-    
+@media screen and (max-width:425px){
     html{
         scroll-behavior:smooth;
-        width:320px;
+        width:100%;
     }
     body{
         font-family: 'Dosis', sans-serif;
@@ -301,25 +318,55 @@ ul{
         width:100%;
         color:white;
         transition:ease all .3s;
+        padding:20px 10px;
+        justify-content:center;
+        display:grid;
+        grid-template-rows:repeat(2,auto);
+        grid-template-areas:
+            "curriculumvitae"
+            "listnav";
+    }
+    .navbar h2{
+        grid-area:curriculumvitae;
+    }
+    .menu{
+        width:50px;
+        height:50px;
+        display:block;
+    }
+    .list-nav{
+        transition:all .3s;
+        grid-area:listnav;
+        justify-self:center;
+    }
+    .list-nav:hover .dropdown{
+        display:block;
+    }
+    .dropdown{
+        display:none;
+        position:absolute;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index:1;
+        background-color: #2F4F4F;
+        opacity:0.8;
     }
     .list-nav ul{
         list-style:none;
-        margin:0px 100px;
-        padding:0px;
+        margin-left:-30px;
+        margin-right:300px;
+        padding:10px 15px;
         overflow:hidden;
     }
     .list-nav ul li{
         float:left;
     }
-    
     .list-nav a{
         text-decoration:none;
-        display:block;
-        padding:15px 20px;
+        display:inline-block;
+        padding:0px;
         color:white;
         transition:all .3s;
     }
-    
     .list-nav a:hover{
         color:gray;
         background-color:#5F9EA0;
@@ -327,50 +374,99 @@ ul{
     .list-nav a:active{
         color:white;
     }
+    #Aboutme{
+        padding-top:200px;
+        width:100%;
+        display:grid;
+        grid-template-rows: repeat(3,auto);
+    }
     .aboutme .profile{
-        padding:20px 30px;
+        padding:20px 0px;
+        width:100%;
         font-size:20px;
         background-color:white;
         display:grid;
-        top: 200px;
-        grid-template-columns:repeat(2,auto);
+        grid-template-columns:repeat(1,auto);
+        justify-content:center;
     }
     .profile .profileimg{
-        padding:20px 40px;
+        padding:20px 0px;
+    }
+    #border-image-horizon{
+        border:1px solid black;
+        width:300px;
     }
     .profile .profileimg img{
-        width:250px;
-        height:250px;
+        width:100px;
+        height:100px;
         border-radius:50%;
     }
     .profile .deskripsi{
         text-align:left;
         padding:20px 30px;
-        grid:display;
-        grid-template-columns:repeat(4,auto);
+        display:grid;
+        grid-template-rows:repeat(4,auto);
     }
     #border-line{
         border:1px solid gray;
-        margin:70px;
+        margin:20px 0px;
+    }
+    .profession2{
+        width:425px;
+        display:grid;
+        grid-template-rows:repeat(2,auto);
+        grid-template-areas:
+            "programmer"
+            "writer";
+        justify-content: center;
+    }
+    .programmer{
+        grid-area:programmer;
+        margin-bottom: 30px;
+    }
+    .writer{
+        grid-area:writer;
+        margin-bottom:30px;
     }
     .hobby{
-        display:grid;
-        grid-template-columns:repeat(3,auto);
         padding:20px 30px;
+        width:100%;
+        display:grid;
+        grid-template-rows:repeat(3,auto);
+        grid-template-areas:
+            "run"
+            "blog"
+            "koding";
+        justify-content: center;
+    }
+    .run{
+        grid-area:run;
+        margin-bottom: 50px;
+    }
+    .blog{
+        grid-area:blog;
+        margin-bottom: 50px;
+    }
+    .koding{
+        grid-area:koding;
+        margin-bottom: 50px;
     }
     .iconhobby{
         width:150px;
         height:150px;
     }
-    .bag2{
-        background-color:#DCDCDC;
+    .myhobby{
         width:100%;
-        height:400px;
+    }
+    .bag2{
+        background-color:#f9f9ff;
+        width:100%;
+        height:500px;
         padding:50px 50px;
     }
     .pendidikan{
         margin:30px;
-        margin-left:250px;
+        margin-left:0px;
     }
     .education{
         position:relative;
@@ -391,12 +487,17 @@ ul{
     
     ul{
         list-style-type: none;
+        padding:0px;
+        margin:0px;
     }
     
     .bag3{
-        background-color:gray;
+        background-color:white;
         display:grid;
-        grid-template-columns:repeat(2,auto);
+        grid-template-rows:repeat(2,auto);
+        grid-template-areas:
+            "codingskills"
+            "basicskills";
         width:100%;
         padding:50px 30px;
     }
@@ -405,10 +506,15 @@ ul{
         position:relative;
         padding:0px 20px;
         transition:all .2s;
+        grid-area:codingskills;
+    }
+    .basic-skills{
+        grid-area:basicskills;
+        margin-top:40px;
     }
     .skillbar{
         float:left;
-        width:400px;
+        width:200px;
         height:20px;
         background-color:#f1e2e2;
         border-radius:20px;
@@ -448,12 +554,19 @@ ul{
     }
     .bag4{
         width:100%;
-        height:400px;
-        background-color:#F5F5DC;
+        height:100%;
+        background-color:#f9f9ff;
         padding:30px 40px;
     }
     .findme{
         text-align:left;
+        grid-area:findme;
+    }
+    .followme{
+        grid-area:followme;
+    }
+    .contactme{
+        grid-area:contactme;
     }
     .location{
         height:30px;
@@ -463,13 +576,21 @@ ul{
         -webkit-filter:grayscale(1);
         -webkit-transition:all .8s ease-in-out;
     }
-    .location a:hover{
-        filter:none;
-        -webkit-filter:grayscale(0);
+    .alamat{
+        padding:0px 50px;
+        margin-top:-40px;
     }
     .contact{
         display:grid;
-        grid-template-columns:repeat(3,auto);
+        grid-template-rows:repeat(3,auto);
+        grid-template-areas:
+            "contactme"
+            "followme"
+            "findme";
+    }
+    .location a:hover{
+        filter:none;
+        -webkit-filter:grayscale(0);
     }
     .sosmed{
         display:grid;
@@ -516,5 +637,4 @@ ul{
         display:grid;
         grid-template-rows:repeat(2,auto);
     }
-
 }
